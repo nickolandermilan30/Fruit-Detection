@@ -6,7 +6,7 @@
 
     <!-- Ang radius ng rounded corner sa kanan itaas -->
     <corners
-        android:topRightRadius="50dp" /> <!-- I-adjust ang radius base sa iyong preference -->
+        android:topRightRadius="50dp"/> <!-- I-adjust ang radius base sa iyong preference -->
 
     <!-- Ang sukat ng shape (square) -->
     <size

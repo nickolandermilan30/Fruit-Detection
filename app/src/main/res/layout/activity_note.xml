@@ -7,6 +7,83 @@
     android:layout_height="match_parent"
     tools:context=".NoteActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="81dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="225dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/amiko"
+        android:gravity="left"
+        android:text="Hello User"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/headerCardView"
+        app:layout_constraintEnd_toEndOf="@+id/headerCardView"
+        app:layout_constraintStart_toStartOf="@+id/headerCardView"
+        app:layout_constraintTop_toTopOf="@+id/headerCardView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="166dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="140dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/amiko"
+        android:gravity="left"
+        android:text="Wellcome to Capfruit"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/headerCardView"
+        app:layout_constraintEnd_toEndOf="@+id/headerCardView"
+        app:layout_constraintStart_toStartOf="@+id/headerCardView"
+        app:layout_constraintTop_toTopOf="@+id/headerCardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerCardView"
+        android:layout_width="0dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="320dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/capture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- FrameLayout as parent of ImageView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ImageView for header_img -->
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header_img" />
+
+            <!-- Gradient overlay for fade effect -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/fade_gradient"
+                android:clickable="false"
+                android:focusable="false"
+                android:foregroundGravity="bottom" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
