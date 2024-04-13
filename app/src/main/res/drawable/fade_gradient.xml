@@ -1,8 +1,7 @@
-<!-- res/drawable/fade_gradient.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="#993D5631"
-    android:centerColor="#3D5631"
-    android:endColor="#3D5631"
-    android:angle="10"/>
+        android:startColor="#99000000"
+        android:centerColor="#000000"
+        android:endColor="#000000"
+        android:angle="10"/>
 </shape>

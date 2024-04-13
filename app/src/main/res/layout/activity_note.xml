@@ -7,6 +7,157 @@
     android:layout_height="match_parent"
     tools:context=".NoteActivity">
 
+    <ImageButton
+        android:id="@+id/bar"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="199dp"
+        android:background="@drawable/bar_chart_btn"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerCardView"
+        app:layout_constraintEnd_toEndOf="@+id/headerCardView"
+        app:layout_constraintStart_toStartOf="@+id/headerCardView"
+        app:layout_constraintTop_toTopOf="@+id/headerCardView" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Banana"
+        android:textColor="@color/light_green"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/border3"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/border3"
+        app:layout_constraintTop_toBottomOf="@+id/border3"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Banana"
+        android:textColor="@color/light_green"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/border2"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/border2"
+        app:layout_constraintTop_toBottomOf="@+id/border2"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Apple"
+        android:textColor="@color/light_green"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/border1"
+        app:layout_constraintTop_toBottomOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <View
+        android:id="@+id/border1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border_nav"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerCardView"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <View
+        android:id="@+id/border3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border3_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/border1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/border1"
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/orange_img"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/border3"
+        app:layout_constraintEnd_toEndOf="@+id/border3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/border3"
+        app:layout_constraintTop_toTopOf="@+id/border3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/apple_img"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerCardView"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/banana_img"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/border1"
+        app:layout_constraintEnd_toStartOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/border2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border2_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/border1"
+        app:layout_constraintEnd_toStartOf="@+id/border1"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/border1"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="81dp"
@@ -187,6 +338,7 @@
         app:layout_constraintTop_toTopOf="@+id/cardView" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="39dp"
         android:layout_height="17dp"
         android:layout_marginTop="20dp"
