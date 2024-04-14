@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +11,7 @@ public class NoteActivity extends AppCompatActivity {
 
     private TextView titleTextView;
     private TextView textTextView;
-
+    private ImageButton captureButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,17 @@ public class NoteActivity extends AppCompatActivity {
 
         titleTextView = findViewById(R.id.title);
         textTextView = findViewById(R.id.text);
+        captureButton = findViewById(R.id.capture); // Initialize ImageButton
+
+        captureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Define the activity to navigate to upon button click
+                Intent intent = new Intent(NoteActivity.this, CaptureActivity.class);
+                startActivity(intent); // Start the new activity
+            }
+        });
+
 
         // Set initial text and title to border2's content
         titleTextView.setText("Banana");
