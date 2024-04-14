@@ -18,6 +18,11 @@ public class NoteActivity extends AppCompatActivity {
         titleTextView = findViewById(R.id.title);
         textTextView = findViewById(R.id.text);
 
+        // Set initial text and title to border2's content
+        titleTextView.setText("Banana");
+        textTextView.setText("A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. " +
+                "In some countries, cooking bananas are called plantains, distinguishing them from dessert bananas.");
+
         // Set click listeners for borders
         View border1 = findViewById(R.id.border1);
         View border2 = findViewById(R.id.border2);
@@ -28,7 +33,9 @@ public class NoteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Update title and text when border1 is clicked
                 titleTextView.setText("Apple");
-                textTextView.setText("This is information about apples.");
+                textTextView.setText("An apple is a round, edible fruit produced by an apple tree. " +
+                        "Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. " +
+                        "The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found.");
             }
         });
 
@@ -37,7 +44,8 @@ public class NoteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Update title and text when border2 is clicked
                 titleTextView.setText("Banana");
-                textTextView.setText("This is information about bananas.");
+                textTextView.setText("A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. " +
+                        "In some countries, cooking bananas are called plantains, distinguishing them from dessert bananas.");
             }
         });
 
@@ -46,7 +54,9 @@ public class NoteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Update title and text when border3 is clicked
                 titleTextView.setText("Orange");
-                textTextView.setText("This is information about oranges.");
+                textTextView.setText("An orange, also called sweet orange to distinguish it from the bitter orange Citrus × aurantium, is the fruit of a tree in the family Rutaceae. " +
+                        "Botanically, this is the hybrid Citrus × sinensis, between the pomelo and the mandarin orange. " +
+                        "The chloroplast genome, and therefore the maternal line, is that of pomelo.");
             }
         });
     }
